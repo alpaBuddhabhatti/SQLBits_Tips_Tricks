@@ -1,0 +1,59 @@
+{
+	"name": "AzureAppDemo-Func",
+	"properties": {
+		"activities": [
+			{
+				"name": "Azure Function",
+				"type": "AzureFunctionActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"functionName": "Function1",
+					"method": "POST",
+					"body": {
+						"name": "Azure Spring Clean 2023"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_AF",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "Set variable",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Azure Function",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "FunResult",
+					"value": {
+						"value": "@activity('Azure Function').output.Response",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"FunResult": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-03-14T00:11:40Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

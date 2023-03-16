@@ -1,0 +1,9 @@
+{
+	"name": "AzureAppDemo-ADF-DEV",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "58190f70-840f-4a8d-babb-ca9f9516c8bc",
+		"tenantId": "ae9fbde4-bce1-462a-8664-5ac86fbfe439"
+	}
+}
