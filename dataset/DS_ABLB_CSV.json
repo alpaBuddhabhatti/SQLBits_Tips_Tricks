@@ -18,19 +18,6 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "CustomerID",
-				"type": "String"
-			},
-			{
-				"name": "Car Type",
-				"type": "String"
-			},
-			{
-				"name": "FileName",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
