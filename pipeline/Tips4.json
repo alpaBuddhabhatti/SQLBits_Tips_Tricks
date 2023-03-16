@@ -89,7 +89,8 @@
 		],
 		"variables": {
 			"total": {
-				"type": "String"
+				"type": "String",
+				"defaultValue": "800"
 			}
 		},
 		"annotations": []
