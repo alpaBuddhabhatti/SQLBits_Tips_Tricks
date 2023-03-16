@@ -29,16 +29,7 @@
 				}
 			],
 			"scriptLines": [
-				"source(output(",
-				"          movie as integer,",
-				"          title as string,",
-				"          genres as string,",
-				"          year as short,",
-				"          Rating as short,",
-				"          {Rotton Tomato} as short,",
-				"          Address as string",
-				"     ),",
-				"     allowSchemaDrift: false,",
+				"source(allowSchemaDrift: false,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 filter(year <2000 && year >1900) ~> filter1",
