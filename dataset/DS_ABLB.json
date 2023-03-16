@@ -5,6 +5,11 @@
 			"referenceName": "LS_ABLB",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"test": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
