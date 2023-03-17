@@ -33,7 +33,7 @@
 										{
 											"name": "data",
 											"value": {
-												"value": "@item()",
+												"value": "@join(variables('data'),decodeUriComponent('%0A'))",
 												"type": "Expression"
 											}
 										}
