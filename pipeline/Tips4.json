@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Set variable1",
+				"name": "Set variable total",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"userProperties": [],
@@ -16,11 +16,11 @@
 				}
 			},
 			{
-				"name": "Copy data1",
+				"name": "Copy Variable",
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Set variable1",
+						"activity": "Set variable total",
 						"dependencyConditions": [
 							"Succeeded"
 						]
