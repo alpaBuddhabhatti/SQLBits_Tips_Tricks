@@ -56,7 +56,7 @@
 									"type": "String"
 								},
 								"sink": {
-									"name": "data",
+									"name": "Column1",
 									"type": "String",
 									"physicalType": "String"
 								}
