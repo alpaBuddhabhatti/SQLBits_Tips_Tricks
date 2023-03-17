@@ -12,6 +12,7 @@
 						"value": "@variables('data')",
 						"type": "Expression"
 					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "Set variable1",
