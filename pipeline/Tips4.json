@@ -73,9 +73,9 @@
 									"type": "String"
 								},
 								"sink": {
+									"name": "data",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 1
+									"physicalType": "String"
 								}
 							}
 						],
