@@ -9,7 +9,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "[1,2,3,4,5]",
+						"value": "[\"1\",\"2\"]",
 						"type": "Expression"
 					},
 					"activities": [
@@ -20,7 +20,10 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "total",
-								"value": "500"
+								"value": {
+									"value": "@item().value",
+									"type": "Expression"
+								}
 							}
 						},
 						{
@@ -118,6 +121,13 @@
 			"total": {
 				"type": "String",
 				"defaultValue": "800"
+			},
+			"data": {
+				"type": "Array",
+				"defaultValue": [
+					1,
+					2
+				]
 			}
 		},
 		"annotations": []
