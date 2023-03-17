@@ -1,0 +1,66 @@
+{
+	"name": "Tips4_1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable total",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "total",
+					"value": {
+						"value": "800",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Writing To blob",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "Set variable total",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": {
+						"value": "@concat('https://azureappdemostore.blob.core.windows.net/input/Info.csv' ,'test','_','2)','.csv')",
+						"type": "Expression"
+					},
+					"method": "PUT",
+					"headers": {
+						"x-ms-version": "2017-11-09",
+						"x-ms-blob-type": "BlockBlob"
+					},
+					"body": {
+						"value": "@variables('total')",
+						"type": "Expression"
+					},
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://storage.azure.com/"
+					}
+				}
+			}
+		],
+		"variables": {
+			"total": {
+				"type": "String",
+				"defaultValue": "800"
+			}
+		},
+		"annotations": []
+	}
+}
