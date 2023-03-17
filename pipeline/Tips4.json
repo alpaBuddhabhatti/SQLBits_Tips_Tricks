@@ -21,7 +21,7 @@
 							"typeProperties": {
 								"variableName": "total",
 								"value": {
-									"value": "@item().value",
+									"value": "@item().name",
 									"type": "Expression"
 								}
 							}
