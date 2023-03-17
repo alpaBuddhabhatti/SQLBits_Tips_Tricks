@@ -36,7 +36,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"url": {
-						"value": "@concat('https://azureappdemostore.blob.core.windows.net/input/Info.csv' ,'test','_','2)','.csv')",
+						"value": "@concat('https://azureappdemostore.blob.core.windows.net/input/','test','_','2)','.csv')",
 						"type": "Expression"
 					},
 					"method": "PUT",
