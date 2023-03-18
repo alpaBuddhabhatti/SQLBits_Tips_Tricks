@@ -30,7 +30,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@if(equals(variables('ItemNO'),4),true,false)",
+						"value": "@if(equals(variables('ItemNO'),'4'),true,false)",
 						"type": "Expression"
 					},
 					"ifTrueActivities": [
@@ -61,7 +61,7 @@
 				"typeProperties": {
 					"variableName": "itemnoofno",
 					"value": {
-						"value": "@string(equals(variables('ItemNO'),4))",
+						"value": "@string(equals(variables('ItemNO'),'4'))",
 						"type": "Expression"
 					}
 				}
