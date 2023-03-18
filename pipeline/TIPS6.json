@@ -1,6 +1,7 @@
 {
-	"name": "PL_GLOBAL_VARIABLE_USAGE",
+	"name": "TIPS6",
 	"properties": {
+		"description": "PARAMETERS, VARIABLE,GLOBAL_VARIABLE\nUSAGE",
 		"activities": [
 			{
 				"name": "Writing To blob",
@@ -35,6 +36,11 @@
 				}
 			}
 		],
+		"variables": {
+			"RUNDATE": {
+				"type": "String"
+			}
+		},
 		"annotations": [
 			"@pipeline().globalParameters.BlobStoreName"
 		],
