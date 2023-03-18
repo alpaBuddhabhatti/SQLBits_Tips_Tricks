@@ -24,7 +24,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"url": {
-						"value": "@concat(pipeline().globalParameters.BlobStoreName,'/input/',pipeline().parameters.BOName,'_',variables('RUNDATE'),'.csv')",
+						"value": "@concat(pipeline().globalParameters.BlobStoreName,pipeline().parameters.BOName,pipeline().parameters.BOName,'_',variables('RUNDATE'),'.csv')",
 						"type": "Expression"
 					},
 					"method": "PUT",
