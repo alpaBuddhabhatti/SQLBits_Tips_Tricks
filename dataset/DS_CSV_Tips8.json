@@ -1,0 +1,27 @@
+{
+	"name": "DS_CSV_Tips8",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ABLB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "bo1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "This is Global Parameter Test",
+				"type": "String"
+			}
+		]
+	}
+}
