@@ -56,7 +56,11 @@
 							"name": "Append variable1",
 							"type": "AppendVariable",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "ListOItem",
+								"value": ""
+							}
 						}
 					]
 				}
