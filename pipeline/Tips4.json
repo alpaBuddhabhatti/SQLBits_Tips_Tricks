@@ -1,7 +1,7 @@
 {
 	"name": "Tips4",
 	"properties": {
-		"description": "How to dynamically access Activity Failure error message in Azure Data Factory?\n",
+		"description": "How to access output error when in case of pipeline Fail",
 		"activities": [
 			{
 				"name": "Copy data1",
