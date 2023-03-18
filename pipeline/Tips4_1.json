@@ -1,6 +1,7 @@
 {
 	"name": "Tips4_1",
 	"properties": {
+		"description": "Writing to Blob Storage",
 		"activities": [
 			{
 				"name": "Writing To blob",
