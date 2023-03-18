@@ -79,6 +79,9 @@
 			},
 			"error": {
 				"type": "String"
+			},
+			"error2": {
+				"type": "String"
 			}
 		},
 		"annotations": [
