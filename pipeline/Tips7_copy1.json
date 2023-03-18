@@ -47,11 +47,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"BOName": {
-				"type": "string"
-			}
-		},
 		"variables": {
 			"ItemNO": {
 				"type": "String"
