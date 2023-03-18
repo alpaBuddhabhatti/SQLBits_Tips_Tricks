@@ -70,7 +70,8 @@
 		],
 		"parameters": {
 			"BOName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "bo1"
 			}
 		},
 		"variables": {
