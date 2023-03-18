@@ -50,7 +50,7 @@
 				"typeProperties": {
 					"variableName": "RUNDATE",
 					"value": {
-						"value": "@replace(replace(replace(pipeline().TriggerTime, '.','_'),':',''),'Z','')",
+						"value": "@replace(replace(replace(replace(replace(pipeline().TriggerTime, '.','_'),':',''),'Z',''),'T',''),'-','')",
 						"type": "Expression"
 					}
 				}
