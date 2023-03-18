@@ -1,6 +1,7 @@
 {
 	"name": "Tips8",
 	"properties": {
+		"description": "Split pipelines for monitoring visibility\n",
 		"activities": [
 			{
 				"name": "listOfFiles",
@@ -24,6 +25,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
