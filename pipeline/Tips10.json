@@ -54,14 +54,14 @@
 					},
 					"activities": [
 						{
-							"name": "Append variable1",
-							"type": "AppendVariable",
+							"name": "Set variable1",
+							"type": "SetVariable",
 							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "ListOfItemResult",
+								"variableName": "total",
 								"value": {
-									"value": "@item()",
+									"value": "@1item()",
 									"type": "Expression"
 								}
 							}
@@ -74,16 +74,6 @@
 			"total": {
 				"type": "String",
 				"defaultValue": "800"
-			},
-			"ListOItem": {
-				"type": "Array",
-				"defaultValue": [
-					"This is test",
-					"This is TEST2"
-				]
-			},
-			"ListOfItemResult": {
-				"type": "Array"
 			}
 		},
 		"annotations": []
