@@ -6,7 +6,14 @@
 			{
 				"name": "Writing To blob",
 				"type": "WebActivity",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "RunDate",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -32,6 +39,19 @@
 					"authentication": {
 						"type": "MSI",
 						"resource": "https://storage.azure.com/"
+					}
+				}
+			},
+			{
+				"name": "RunDate",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "RUNDATE",
+					"value": {
+						"value": "@replace(replace(replace(pipeline().TriggerTime, '.','_'),':',''),'Z','')",
+						"type": "Expression"
 					}
 				}
 			}
