@@ -86,6 +86,8 @@
 				"type": "Array"
 			}
 		},
-		"annotations": []
+		"annotations": [
+			"@variables('ListOfItemResult')"
+		]
 	}
 }
