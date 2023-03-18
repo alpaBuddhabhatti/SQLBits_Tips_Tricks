@@ -1,5 +1,13 @@
 {
 	"name": "AzureAppDemo-ADF-DEV",
+	"properties": {
+		"globalParameters": {
+			"BlobStoreName": {
+				"type": "string",
+				"value": "https://azureappdemostore.blob.core.windows.net/"
+			}
+		}
+	},
 	"location": "eastus",
 	"identity": {
 		"type": "SystemAssigned",
