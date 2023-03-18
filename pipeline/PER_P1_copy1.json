@@ -45,11 +45,36 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Copy data1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Dataread",
+					"value": {
+						"value": "@int(activity('Copy data1').output.dataRead)",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
 			"ContainerName": {
 				"type": "string"
+			}
+		},
+		"variables": {
+			"Dataread": {
+				"type": "String"
 			}
 		},
 		"annotations": [],
