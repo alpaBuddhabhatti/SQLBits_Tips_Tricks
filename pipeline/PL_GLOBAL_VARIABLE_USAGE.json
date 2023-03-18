@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"url": {
-						"value": "@concat(pipeline().globalParameters.BlobStoreName,'/input/','data','_',utcnow(),'.csv')",
+						"value": "@concat(pipeline().globalParameters.BlobStoreName,'/input/','GlobalVariableTest','_',utcnow(),'.csv')",
 						"type": "Expression"
 					},
 					"method": "PUT",
