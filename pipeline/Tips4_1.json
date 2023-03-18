@@ -58,7 +58,7 @@
 							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "ListOItem",
+								"variableName": "ListOfItemResult",
 								"value": {
 									"value": "@item()",
 									"type": "Expression"
