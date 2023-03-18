@@ -80,6 +80,9 @@
 					"This is test",
 					"This is TEST2"
 				]
+			},
+			"ListOfItemResult": {
+				"type": "String"
 			}
 		},
 		"annotations": []
