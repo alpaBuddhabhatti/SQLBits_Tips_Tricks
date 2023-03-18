@@ -45,10 +45,30 @@
 						}
 					]
 				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "If Condition1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "ItemNO",
+					"value": ""
+				}
 			}
 		],
 		"variables": {
 			"ItemNO": {
+				"type": "String"
+			},
+			"itemnoofno": {
 				"type": "String"
 			}
 		},
