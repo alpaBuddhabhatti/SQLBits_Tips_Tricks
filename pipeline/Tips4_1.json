@@ -68,8 +68,11 @@
 				"defaultValue": "800"
 			},
 			"ListOItem": {
-				"type": "String",
-				"defaultValue": "[\"This is test\", \"This is TEST2\"]"
+				"type": "Array",
+				"defaultValue": [
+					"This is test",
+					"This is TEST2"
+				]
 			}
 		},
 		"annotations": []
