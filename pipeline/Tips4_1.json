@@ -82,7 +82,7 @@
 				]
 			},
 			"ListOfItemResult": {
-				"type": "String"
+				"type": "Array"
 			}
 		},
 		"annotations": []
