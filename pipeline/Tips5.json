@@ -1,7 +1,7 @@
 {
 	"name": "Tips5",
 	"properties": {
-		"description": "Writing to Blob Storage",
+		"description": "ANOTATION EXMAMPLE",
 		"activities": [
 			{
 				"name": "Writing To blob",
