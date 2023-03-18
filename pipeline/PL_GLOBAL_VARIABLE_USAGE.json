@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"url": {
-						"value": "@concat('https://azureappdemostore.blob.core.windows.net/input/','data','_',utcnow(),'.csv')",
+						"value": "@concat(pipeline().globalParameters.BlobStoreName,'/input/','data','_',utcnow(),'.csv')",
 						"type": "Expression"
 					},
 					"method": "PUT",
