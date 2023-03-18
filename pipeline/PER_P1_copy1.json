@@ -61,7 +61,7 @@
 				"typeProperties": {
 					"variableName": "Dataread",
 					"value": {
-						"value": "@int(activity('Copy data1').output.dataRead)",
+						"value": "@string(activity('Copy data1').output.dataRead)",
 						"type": "Expression"
 					}
 				}
