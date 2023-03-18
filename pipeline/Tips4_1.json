@@ -1,6 +1,7 @@
 {
-	"name": "PER_P1_copy1",
+	"name": "Tips4_1",
 	"properties": {
+		"description": "How to read output when in case of pipeline successful",
 		"activities": [
 			{
 				"name": "Copy data1",
