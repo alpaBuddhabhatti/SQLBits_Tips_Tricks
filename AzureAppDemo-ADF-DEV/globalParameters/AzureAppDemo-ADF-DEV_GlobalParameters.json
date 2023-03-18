@@ -1,6 +1,6 @@
 {
 	"BlobStoreName": {
 		"type": "string",
-		"value": "https://azureappdemostore.blob.core.windows.net"
+		"value": "https://azureappdemostore.blob.core.windows.net/"
 	}
 }
