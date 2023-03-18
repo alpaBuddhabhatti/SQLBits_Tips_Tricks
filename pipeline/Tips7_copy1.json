@@ -61,7 +61,7 @@
 				"typeProperties": {
 					"variableName": "itemnoofno",
 					"value": {
-						"value": "@string(if(equals(variables('ItemNO'),4),true,false))",
+						"value": "@string(equals(variables('ItemNO'),4))",
 						"type": "Expression"
 					}
 				}
