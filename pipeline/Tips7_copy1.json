@@ -59,8 +59,11 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "ItemNO",
-					"value": ""
+					"variableName": "itemnoofno",
+					"value": {
+						"value": "@string(if(equals(variables('ItemNO'),4),true,false))",
+						"type": "Expression"
+					}
 				}
 			}
 		],
