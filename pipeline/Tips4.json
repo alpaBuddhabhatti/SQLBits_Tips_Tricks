@@ -1,7 +1,7 @@
 {
 	"name": "Tips4",
 	"properties": {
-		"description": "PARAMETERS, VARIABLE,GLOBAL_VARIABLE\nUSAGE",
+		"description": "How to dynamically access Activity Failure error message in Azure Data Factory?\n",
 		"activities": [
 			{
 				"name": "Writing To blob",
@@ -54,6 +54,26 @@
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Writing To blob",
+						"dependencyConditions": [
+							"Failed"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "error",
+					"value": {
+						"value": "@activity('Writing To blob').output.Error.Message",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
@@ -63,6 +83,9 @@
 		},
 		"variables": {
 			"RUNDATE": {
+				"type": "String"
+			},
+			"error": {
 				"type": "String"
 			}
 		},
