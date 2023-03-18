@@ -32,7 +32,7 @@
 						"x-ms-blob-type": "BlockBlob"
 					},
 					"body": {
-						"value": "@variables('ListOItem')",
+						"value": "@variables('ListOfItemResult')",
 						"type": "Expression"
 					},
 					"authentication": {
