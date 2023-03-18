@@ -32,7 +32,18 @@
 					"expression": {
 						"value": "@if(equals(variables('ItemNO'),4),true,false)",
 						"type": "Expression"
-					}
+					},
+					"ifTrueActivities": [
+						{
+							"name": "Wait1",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 2
+							}
+						}
+					]
 				}
 			}
 		],
