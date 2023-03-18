@@ -1,0 +1,55 @@
+{
+	"name": "Tips7_copy1",
+	"properties": {
+		"description": "If inside if",
+		"activities": [
+			{
+				"name": "ItemNo",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "ItemNO",
+					"value": {
+						"value": "4",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "If Condition1",
+				"type": "IfCondition",
+				"dependsOn": [
+					{
+						"activity": "ItemNo",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@if(equals(variables('ItemNO'),4),true,false)",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"BOName": {
+				"type": "string"
+			}
+		},
+		"variables": {
+			"ItemNO": {
+				"type": "String"
+			}
+		},
+		"annotations": [
+			"@pipeline().globalParameters.BlobStoreName"
+		],
+		"lastPublishTime": "2023-03-14T23:58:06Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
