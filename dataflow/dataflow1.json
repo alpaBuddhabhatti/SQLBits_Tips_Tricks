@@ -33,7 +33,6 @@
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 derive({Movie Info} = concat('This is',:movie_title),",
 				"          {User Info} = concat(\"I have seen \",:movie_title),",
-				"          movie_title := concat(movie, title),",
 				"          movie_title := concat(movie, title)) ~> derivedColumn1"
 			]
 		}
