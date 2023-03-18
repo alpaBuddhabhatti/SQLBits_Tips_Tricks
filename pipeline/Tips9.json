@@ -1,6 +1,7 @@
 {
 	"name": "Tips9",
 	"properties": {
+		"description": "How to write variable into Blob storage?\n",
 		"activities": [
 			{
 				"name": "Set variable total",
